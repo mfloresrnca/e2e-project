@@ -15,7 +15,11 @@ class LoginPage extends Page {
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
      */
-    login (email, password) {
+    setEmailandPassword(email,password){
+        this.inputEmail.setValue(email);
+        this.inputPassword.setValue(password);
+    }
+     login (email, password) {
         this.inputEmail.setValue(email);
         this.inputPassword.setValue(password);
         this.btnSubmit.click(); 
