@@ -1,6 +1,5 @@
-const loginPage = require('../pageobjects/login.page');
-const LoginPage = require('../pageobjects/login.page');
-const SecurePage = require('../pageobjects/secure.page');
+import LoginPage from '../pageobjects/login.page'
+import SecurePage from '../pageobjects/secure.page'
 
 describe('My E-commerce application', () => {
     let email = 'test@nicasource.com';
@@ -22,14 +21,13 @@ describe('My E-commerce application', () => {
         it('the inputs should contain their respective values',()=>{
             LoginPage.setEmailandPassword(email,password);
             expect(LoginPage.inputEmail).toHaveValueContaining(email);
-            expect(loginPage.inputPassword).toHaveValueContaining(password);
+            expect(LoginPage.inputPassword).toHaveValueContaining(password);
         })
     })
 
     describe('When email address and password are entered', () => {
         it('should login with valid credentials', () => { 
             LoginPage.login(email,password );
-            console.log(SecurePage.username);
             expect(SecurePage.username).toBeExisting();
             expect(SecurePage.username).toHaveTextContaining('MY ACCOUNT');
         });
