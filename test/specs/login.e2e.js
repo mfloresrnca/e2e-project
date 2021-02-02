@@ -9,6 +9,14 @@ describe('My E-commerce application', () => {
         LoginPage.open();
     })
     
+    describe('When first-time visitors go',() =>{
+        it('should have the email and password inputs empty',() =>{
+            expect(LoginPage.inputEmail).toHaveTextContaining('');
+            expect(LoginPage.inputPassword).toHaveTextContaining('');
+        });
+
+    });
+
     describe('When email address and password are entered', () => {
         it('should login with valid credentials', () => { 
             LoginPage.login(email,password );
