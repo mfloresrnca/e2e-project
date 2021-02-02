@@ -1,6 +1,6 @@
 # e2e-project
 
-This project runs e2e test for login in a E-commerce aplication
+This project runs e2e test for a login functionality 
 
 ## Libraries used:
 
@@ -13,7 +13,7 @@ This project runs e2e test for login in a E-commerce aplication
 
 ## Instructions
 
-- `git clone` 
-- `cd `
-- `npm install` to install dependencies
+- `git clone https://github.com/mfloresrnca/e2e-project.git` 
+- `cd e2e-project`
+- `npm install` to install the dependencies
 - `npx wdio wdio.conf.js` to run test
