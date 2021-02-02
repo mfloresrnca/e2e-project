@@ -8,8 +8,9 @@ This project runs e2e test for a login functionality
 
 ## You need:
 
-**Node.js v15.5.1**
-**Python v3**
+- **Node.js v15.5.1**
+
+- **Python v3**
 
 
 ## Instructions
